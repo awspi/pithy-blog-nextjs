@@ -14,7 +14,7 @@ export default function Footer() {
           </a>{' '}
           {new Date().getFullYear()}
           <a
-            href='https://github.com/Chocolate1999'
+            href='https://github.com/awspi'
             target='_blank'
             className='pl-1'
             rel='noreferrer'

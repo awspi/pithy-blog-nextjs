@@ -2,6 +2,7 @@ import useMobileTerminal from "@/hooks/useMobileTerminal";
 import classNames from "classnames";
 import Footer from "./footer";
 import Header from "./header";
+import Plum from "./Plum";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const isMobile = useMobileTerminal()
@@ -14,6 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Footer />
         </div>
       </div>
+      <Plum />
     </div>
   )
 }
