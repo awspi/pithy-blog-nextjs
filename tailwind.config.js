@@ -12,9 +12,12 @@ module.exports = {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {
-        dark: '#222222',
+        dark: '#222',
       }
     }
   },
   plugins: []
 }
+
+
+
