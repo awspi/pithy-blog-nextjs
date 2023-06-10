@@ -7,5 +7,10 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "cSpell.words": [
+    "Bili",
+    "juejin",
+    "Yuque"
+  ]
 }

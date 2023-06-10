@@ -8,8 +8,12 @@ export const navAtom = atom({
       link: '/',
     },
     {
-      name: 'Blog',
-      link: '/blog',
+      name: 'Activities',
+      link: '/activities',
+    },
+    {
+      name: 'Notes',
+      link: '/notes',
     },
     {
       name: 'Projects',
