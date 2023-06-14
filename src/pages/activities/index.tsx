@@ -1,3 +1,4 @@
+import Tabs from "@/components/tabs";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import CustomLink from "@/links/custom-link";
 import classNames from "classnames";
@@ -118,44 +119,21 @@ export default function Act() {
 
   const tabs = [
     {
-      title: '掘金点赞列表',
+      title: '掘金最近点赞',
       comp: <Juejin />
     },
     {
-      title: 'Bilibili收藏列表',
+      title: 'Bilibili最近收藏',
       comp: <Bili />
     }
   ]
-  const [tabIndex, setTabIndex] = useState(0)
-
 
   return (
     <div className="m-auto mb-8">
-      <h1>Activities</h1>
+      <h1 className="mt-4 mb-8">Activities</h1>
       {/* 解决bilibili图片403问题 */}
       <meta name="referrer" content="no-referrer"></meta>
-      <div className="flex mt-6">
-        {
-          tabs.map((tab, index) => (
-            <h3 key={index}
-              onClick={() => setTabIndex(index)}
-              className={
-                classNames(
-                  'mx-3 cursor-pointer border-b-2 border-solid border-transparent duration-200',
-                  'dark:hover:border-green-200 hover:border-zinc-900  ',
-                  index === tabIndex
-                    ? 'text-zinc-900 dark:text-white'
-                    : 'text-zinc-500 dark:text-zinc-400'
-                )}>
-              {tab.title}
-            </h3>
-          ))
-        }
-      </div>
-      <ul className="mt-4">
-        {/* <Juejin /> */}
-        {tabs[tabIndex].comp}
-      </ul>
+      <Tabs tabs={tabs} />
     </div >
   )
 }

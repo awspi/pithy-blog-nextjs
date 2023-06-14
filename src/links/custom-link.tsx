@@ -12,8 +12,8 @@ export default function CustomLink({
       {...rest}
       className={classNames(
         'inline-flex items-center font-medium',
-        ' border-b-2 border-solid border-transparent',
-        'hover:border-solid text-zinc-900 dark:text-zinc-400 hover:text-zinc-600 hover:dark:text-white hover:border-black hover:dark:border-green-200 duration-200',
+        ' border-b border-solid border-transparent',
+        'hover:border-solid text-zinc-900 dark:text-zinc-300 hover:text-zinc-600 hover:dark:text-white hover:border-black hover:dark:border-green-200 duration-300',
         className
       )}
     >
