@@ -53,7 +53,8 @@ const DocsList = ({ data }: { data: PageObjectResponse[] }) => {
                             {
                               backgroundColor: cate.color,
                             }
-                          } key={cate.id}>{cate.name}</span>
+                          }
+                          key={cate.id}>{cate.name}</span>
                       )
 
                     })}
